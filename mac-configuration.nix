@@ -98,9 +98,9 @@ in
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.milktruck = {
+  users.users.${user} = {
     isNormalUser = true;
-    description = "MilkTruck";
+    description = "${user}'s Conf";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
@@ -216,6 +216,7 @@ in
           e = "exit";
           la = "ls -a";
           cls = "clear";
+          lg = "lazygit";
           f = "asciiquarium";
           edit = "sudo nixos-rebuild edit";
           test = "sudo nixos-rebuild test";
