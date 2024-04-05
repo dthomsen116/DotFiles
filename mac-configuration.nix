@@ -7,9 +7,9 @@
 # Home Manager-Localizing and Imports (github.com/champpg)
 
 let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz";
-  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
   user = "milktruck";
+  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz";
 in
 {
   imports =
@@ -47,15 +47,16 @@ in
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
+    LC_NAME = "en_US.UTF-8";
+    LC_PAPER = "en_US.UTF-8";
+    LC_ADDRESS = "en_US.UTF-8";
+    LC_NUMERIC = "en_US.UTF-8";
+    LC_MONETARY = "en_US.UTF-8";
+    LC_TELEPHONE = "en_US.UTF-8";
+    LC_MEASUREMENT = "en_US.UTF-8";
+    LC_IDENTIFICATION = "en_US.UTF-8";
+
   };
 
   # Enable the X11 windowing system.
@@ -173,18 +174,20 @@ in
        theme = "moonlight";
        shellIntegration.enableFishIntegration = true;
        settings = {
+	 shell = ".";
 	 font_size = 12;
 	 force_ltr = false;
-	 disable_ligatures = "cursor";
-         cursor_shape = "beam";
-         cursor_blink_interval = 1;
-         inactive_text_alpha = "0.8";
-	 tab_bar_edge = "top";
-	 tab_bar_style = "separator";
-         sync_to_monitor = true;
-	 shell = ".";
-	 enable_audio_bell = false;
          cursor = "#fcfcfc";
+	 tab_bar_edge = "top";
+         cursor_shape = "beam";
+         sync_to_monitor = true;
+         cursor_blink_interval = 1;
+	 enable_audio_bell = false;
+         inactive_text_alpha = "0.8";
+	 tab_bar_style = "separator";
+	 disable_ligatures = "cursor";
+
+
       };
        extraConfig = "
 	 map ctrl+right next_window
