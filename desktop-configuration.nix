@@ -102,6 +102,8 @@ in
     xkbVariant = "";
   };
 
+
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -176,7 +178,6 @@ in
     #editors/terminal
     fish
     helix
-    neovim
     bibata-cursors
 
     #TestEnv
@@ -223,7 +224,49 @@ in
          map ctrl+; combine : clear_terminal scrollback active : send_text normal,application \x0c
        ";
     };
+  
+       dconf.settings = {
+	 "org/gnome/settings-daemon/plugins/media-keys" = {
+            custom-keybindings=[
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" 
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" 
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/"
+            ];
+          };
 
+
+       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+       binding = "<Super>Return";
+       command = "gnome-terminal";
+       name = "Terminal";
+       };
+
+       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+       binding = "<Super>w";
+       command = "vivaldi";
+       name = "web";
+       };
+
+       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+       binding = "<Super>f";
+       command = "nemo";
+       name = "File";
+       };
+ 
+       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+       binding = "<Super>s";
+       command = "budgie-control-center";
+       name = "settings";
+       };
+
+       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
+       binding = "<Super>d";
+       command = "budgie-desktop-settings";
+       name = "display";
+       };
+     };
 
 # home man end brackets
   };
@@ -252,14 +295,17 @@ in
           test = "sudo nixos-rebuild test";
           addboot = "sudo nixos-rebuild boot";
 	  switch = "sudo nixos-rebuild switch";
-          g = "sudo cp /etc/nixos/configuration.nix /home/${user}/NixOs/mac-configuration.nix"; 
+          g = "sudo cp /etc/nixos/configuration.nix /home/${user}/NixOs/desktop-configuration.nix"; 
 
         };
     };
 
+
+
+
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
