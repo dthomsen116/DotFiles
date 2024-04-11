@@ -1,33 +1,29 @@
-<p align="center">
-  <a href="https://nixos.org">
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NixOS/nixos-homepage/main/public/logo/nixos-hires.png">
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos-white.png">
-      <img src="https://raw.githubusercontent.com/NixOS/nixos-homepage/main/public/logo/nixos-hires.png" width="500px" alt="NixOS logo">
-    </picture>
-  </a>
-</p>
+## Welcome to My Arch Linux Dotfiles!
 
+Welcome to my personal collection of dotfiles for my Arch Linux setup! This repository contains configurations, scripts, and tips that I've accumulated while customizing my Arch Linux environment. Feel free to explore and adapt these files to suit your own preferences.
 
-  ## What is this?
-  This is my Nixos Playground! I have been enjoying exploring and learning this distro and plan to continue updating this repo with config files or tips and tricks as I go along.
+### Why Arch Linux?
 
-  
-  ### What is NixOS?
-  NixOS is a unique and powerful Linux distribution built around the Nix package manager. Unlike traditional distributions,   NixOS employs a purely functional approach to package management and system configuration. This means that instead of manually installing packages and tweaking system settings, users define their system configurations in a declarative manner using the Nix language.
+I am currently in the process of discovering the best daily driver for my computing needs, and Arch Linux has emerged as a prime candidate. Its lightweight nature, flexibility, and rolling-release model offer a dynamic platform for exploration and customization. By using Arch Linux, I aim to tailor my system precisely to my requirements, optimizing both performance and usability.
 
-## Credits/Friends I worked alongside:
+### What are Dotfiles?
+
+Dotfiles are configuration files on Unix-like systems that are often hidden (hence the name, as filenames starting with a dot are hidden in many file managers). These files are used to customize the behavior and appearance of various programs and the shell environment. Managing dotfiles efficiently can greatly enhance the user experience and productivity on a Unix-like system.
+
+### Credits/Acknowledgments:
 
 <div align="center">
 
-| Name | Source |
-|------|--------|
-| Paul G. | https://quartz.paulgleason.dev |
-| Oliver M. | https://github.com/oliver-mustoe |
-| Miles C. | https://gitbook.miles-campbell.dev |
-| Miles C. | https://github.com/squatchulator |
-| Matt C. | https://mattcompton.dev |
-| Abijah B. | https://github.com/T20A026 |
-| NixOs | https://nixos.org |
+| Name       | Source                                 |
+|------------|----------------------------------------|
+| Paul G.    | [https://quartz.paulgleason.dev](https://quartz.paulgleason.dev) |
+| Oliver M.  | [https://github.com/oliver-mustoe](https://github.com/oliver-mustoe) |
+| Miles C.   | [https://gitbook.miles-campbell.dev](https://gitbook.miles-campbell.dev) |
+| Miles C.   | [https://github.com/squatchulator](https://github.com/squatchulator) |
+| Matt C.    | [https://mattcompton.dev](https://mattcompton.dev) |
+| Abijah B.  | [https://github.com/T20A026](https://github.com/T20A026) |
+| NixOS      | [https://nixos.org](https://nixos.org) |
 
 </div>
+
+These individuals and communities have contributed to my knowledge and inspiration in various ways, and I'm grateful for their work and support.
