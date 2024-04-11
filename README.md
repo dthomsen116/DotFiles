@@ -23,7 +23,7 @@ Dotfiles are configuration files on Unix-like systems that are often hidden (hen
 | Matt C.    | [https://mattcompton.dev](https://mattcompton.dev) |
 | Abijah B.  | [https://github.com/T20A026](https://github.com/T20A026) |
 | NixOS      | [https://nixos.org](https://nixos.org) |
-| Manjaro | [[https://manjaro.org](https://manjaro.org)]
+| Manjaro | [https://manjaro.org](https://manjaro.org)
 
 </div>
 
