@@ -8,3 +8,5 @@ alias c="cd ~/.config/"
 alias up="sudo pacman -Syu"
 alias sn="sudo nano"
 alias migrate="bash ~/DotFiles/Manjaro/migrate.sh"
+alias nf="neofetch"
+
