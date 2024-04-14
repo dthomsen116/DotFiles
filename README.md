@@ -2,6 +2,12 @@
 
 Welcome to my personal collection of dotfiles for my Arch Linux setup! This repository contains configurations, scripts, and tips that I've accumulated while customizing my Arch Linux environment. Feel free to explore and adapt these files to suit your own preferences.
 
+<div align="center">
+
+![image](https://github.com/dthomsen116/DotFiles/assets/71229951/cd95fda8-7bd9-4017-b15a-d52ef31823bf)
+
+</div>
+
 ### Why Arch Linux?
 
 I am currently in the process of discovering the best daily driver for my computing needs, and Arch Linux has emerged as a prime candidate. Its lightweight nature, flexibility, and rolling-release model offer a dynamic platform for exploration and customization. By using Arch Linux, I aim to tailor my system precisely to my requirements, optimizing both performance and usability.
